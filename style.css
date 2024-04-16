@@ -15,6 +15,7 @@
     top: 40px;
     width: 100%;
     height: 60px;
+    left: 20px;
 
 }
 
@@ -31,6 +32,7 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
+    color: grey;
 }
 
 .container .center a::after{
@@ -43,13 +45,64 @@
     background-color: black; /* Or your desired color */
     transition: width 0.4s ease-in-out; /* Transition effect */
     transform: translateX(-50%); /* Center the pseudo-element */
+    /* color: red; */
 }
 
 .container .center a:hover::after {
     width: 100%; /* Expand to the full width */
+    /* color: red; */
+  }
+
+  .container .center a:hover{
+    color: red;
+    transition: color 0.4 ease;
   }
 
 .container button{
     position: relative;
-    top: 60px;
+    top: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    right: 30px;
+    background-color: rgb(9, 150, 9);
+    color: white;
+    border-radius: 10px;
+
+}
+
+.first-section{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    /* display: inline-block; */
+
+}
+
+
+.first-section .left-side h2{
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 90px;
+}
+
+.first-section .left-side h3{
+    font-size: 20px;
+    padding-left: 90px;
+}
+
+.first-section .left-side p{
+    font-size: 10px;
+    padding-left: 90px;
+}
+
+.first-section .left-side button{
+    margin-left: 90px;
+}
+
+.first-section .right-side img{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    right: 90px;
 }
